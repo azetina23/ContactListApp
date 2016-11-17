@@ -36,7 +36,7 @@ myApp.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
 
   $scope.update = function() {
     console.log($scope.contact._id);
-    $http.put('/contactlist/' = $scope.contact._id, $scope.contact).success(fuction(response) {
+    $http.put('/contactlist/' + $scope.contact._id, $scope.contact).success(fuction(response) {
       refresh();
     });
   };
